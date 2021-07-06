@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: vault-demo
+  cloud:
+    vault:
+      kv:
+        enabled: true
+        backend: kafka
+        profile-separator: '/'
+        default-context: example
+      scheme: http
+      token: vault-plaintext-root-token
+      host: localhost
+      port: 8200
